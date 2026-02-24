@@ -1,0 +1,6 @@
+26-02-24 21:44:19.520 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[.[localhost].[/journal] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+26-02-24 21:44:19.528 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+26-02-24 21:44:19.542 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms 
+26-02-24 21:44:20.054 [http-nio-8080-exec-4] ERROR c.e.j.service.UserEntryService - hahah kya mjak kar rahe ho 
+26-02-24 21:44:20.055 [http-nio-8080-exec-4] WARN  c.e.j.service.UserEntryService - hahah kya mjak kar rahe ho 
+26-02-24 21:44:20.056 [http-nio-8080-exec-4] INFO  c.e.j.service.UserEntryService - hahah kya mjak kar rahe ho 

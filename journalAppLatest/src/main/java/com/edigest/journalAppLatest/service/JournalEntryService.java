@@ -4,6 +4,8 @@ import com.edigest.journalAppLatest.Repository.JournalEntryRepo;
 import com.edigest.journalAppLatest.entity.JournalEntry;
 import com.edigest.journalAppLatest.entity.User;
 import org.bson.types.ObjectId;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,6 +20,8 @@ public class JournalEntryService {
     private JournalEntryRepo journalEntryRepo;
     @Autowired
     private UserEntryService userEntryService;
+
+    private static final Logger logger= LoggerFactory.getLogger(JournalEntryService.class);
 
     @Transactional
     public void saveEntry(JournalEntry journalEntry, String userName){
@@ -55,7 +59,8 @@ public class JournalEntryService {
         }
         catch (Exception e)
         {
-            System.out.println(e);
+//            System.out.println(e);
+            logger.info("hahaha");
             throw  new RuntimeException("An error occured while Deleting the entry. " +e);
         }
         return removed;

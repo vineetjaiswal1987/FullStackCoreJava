@@ -1,0 +1,4 @@
+26-02-24 21:45:56.879 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+26-02-24 21:45:56.884 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete 
+26-02-24 21:45:59.915 [main] INFO  c.e.j.JournalAppLatestApplication - Starting JournalAppLatestApplication using Java 21.0.9 with PID 18040 (C:\Users\vineet\Downloads\journalAppLatest\journalAppLatest\target\classes started by vineet in C:\Users\vineet\Downloads\journalAppLatest\journalAppLatest) 
+26-02-24 21:45:59.924 [main] INFO  c.e.j.JournalAppLatestApplication - The following 1 profile is active: "dev" 
