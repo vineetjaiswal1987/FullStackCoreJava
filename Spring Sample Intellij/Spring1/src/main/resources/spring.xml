@@ -1,0 +1,23 @@
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- Bean definitions here -->
+<!--    <bean id="alien1" class="org.vineet.Alien" scope="prototype"/>-->
+    <bean id="alien1" class="org.vineet.Alien" autowire="byType">
+<!--        <constructor-arg type="org.vineet.Laptop" ref="lap1"/>-->
+<!--        <constructor-arg type="int" value="21"/>-->
+<!--        <constructor-arg index="1" type="org.vineet.Laptop" ref="lap1"/>-->
+<!--        <constructor-arg index="0" type="int" value="21"/>-->
+<!--        <constructor-arg name="inalienability" ref="lap1"/>-->
+<!--        <constructor-arg name="age"  value="21"/>-->
+            <property name="age" value="21"/>
+             <property name="com">
+            <bean id="com1" class="org.vineet.Laptop" primary="true"/>
+            </property>
+    </bean>
+<!--    <bean id="com1" class="org.vineet.Laptop" primary="true"/>-->
+<!--    <bean class="org.vineet.Desktop" lazy-init="true"/>-->
+</beans>
